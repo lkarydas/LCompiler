@@ -1,13 +1,11 @@
 package parser;
 
-import java.util.StringTokenizer;
-
-// Import log4j classes.
-import org.apache.log4j.Logger;
-import org.apache.log4j.BasicConfigurator;
 import compiler.Instruction;
 import compiler.Program;
 
+import java.util.StringTokenizer;
+
+import org.apache.log4j.Logger;
 
 public class Parser {
 	Logger log = Logger.getLogger(getClass());
