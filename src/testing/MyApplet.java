@@ -7,7 +7,11 @@ public class MyApplet extends Applet
                          implements ActionListener, MouseListener
 {
 
-  private String message;       // The message text
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+private String message;       // The message text
   private int x, y;             // Its coordinates
   private TextField textEntry;
   private Button enter;
