@@ -1,5 +1,9 @@
 package parser;
-import java.io.*;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 
 import org.apache.log4j.Logger;
 
@@ -8,8 +12,7 @@ public class Importer {
 	Logger log = Logger.getLogger(getClass());
 	static private BufferedReader br;
 	static private BufferedReader br2;
-	public Importer(String fileName){
-		log.debug("New importer created. Filename: "+fileName);
+	public Importer(String fileName) {
 		try {
 			br = new BufferedReader(new FileReader(fileName));
 			br2 = new BufferedReader(new FileReader(fileName));
